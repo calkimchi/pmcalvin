@@ -209,13 +209,13 @@ For external pages:
         let elementID = "analytics"
         
     $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
-        console.log(data);
+        
         desiredIP = data.match(reIP)[1];
         
         
         $.getJSON(('https://api.snoopi.io/' + desiredIP + '?apikey=ce11ff789caa26656a0d13ea0a6a276f'), function(data) {
           analyticsData = JSON.stringify(data);
-            console.log(analyticsData);
+            
         
         document.getElementById(elementID).value = 'IP:' + desiredIP + '\n\n' + analyticsData;
     });                 
