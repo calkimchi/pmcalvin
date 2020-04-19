@@ -25,78 +25,136 @@
 </script>
 </head>
 
-<body id="page-top"><a class="menu-toggle rounded" href="#"><i class="fa fa-bars"></i></a>
+<body id="page-top"><a class="menu-toggle rounded" href="#"><i class="fa fa-list-ul"></i></a>
     <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
         <div class="container"><button data-toggle="collapse" class="navbar-toggler d-none" data-target="#"></button>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav sidebar-nav" id="sidebar-nav">
-                    <li class="nav-item sidebar-brand" role="presentation"><a class="nav-link active js-scroll-trigger" href="#page-top">Brand</a></li>
+                    <li class="nav-item sidebar-brand" role="presentation"><a class="nav-link active js-scroll-trigger" href="#page-top">CareerX</a></li>
                     <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
-                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#RecruiterXP">About</a></li>
+                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#Services">Services</a></li>
+                    <li class="nav-item sidebar-nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#Demo">Contact</a></li>
                 </ul>
-                <ul class="nav navbar-nav">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Second Item</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Third Item</a></li>
-                </ul><button class="btn btn-primary" type="button">Button</button></div>
+            </div>
         </div>
     </nav>
     <header class="d-xl-flex masthead" style="padding-bottom: 0;padding-top: 0;width: 100%;">
-        <div class="d-flex d-sm-flex justify-content-center align-items-center flex-wrap justify-content-sm-center justify-content-xl-center" style="width: 100%;height: 100%;position: absolute;overflow: hidden;background-color: rgba(0,0,0,0.21);"><iframe class="bg-dark d-sm-flex d-xl-flex justify-content-sm-start" allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/406800335?autoplay=1&amp;muted=1&amp;loop=1&amp;portrait=0&amp;title=0&amp;byline=0" style="position: absolute;z-index: -1;position: absolute;/*z-index: 0;*//*background: url(mel.jpg) no-repeat;*/background-size: 100% 100%;top: 0px;left: 0px;fixed to left. Replace it by right if you want.*/     min-width: 100%;/*height: 100%;*/min-width: 2000;max-width: 4000;-webkit-transform: translate(-50%, 0);left: 50%;background-color: rgb(0,0,0);color: rgb(0,0,0);"
+        <div class="d-flex d-sm-flex justify-content-center align-items-center flex-wrap justify-content-sm-center justify-content-xl-center" style="width: 100%;height: 100%;position: absolute;overflow: hidden;background-color: rgba(0,0,0,0.21);"><iframe class="bg-dark d-sm-flex d-xl-flex justify-content-sm-start careerx-video" allowfullscreen="" frameborder="0" src="https://player.vimeo.com/video/406800335?autoplay=1&amp;muted=1&amp;loop=1&amp;portrait=0&amp;title=0&amp;byline=0" style="position: absolute;z-index: -1;/*position: absolute;*//*z-index: 0;*//*background: url(mel.jpg) no-repeat;*/background-size: 100% 100%;top: 0px;left: 0px;fixed to left. Replace it by right if you want.*/     min-width: 100%;/*height: 100%;*/min-width: 2000;max-width: 4000;-webkit-transform: translate(-50%, 0);left: 50%;background-color: rgb(29,128,159);color: rgb(0,0,0);"
                 height="100%" width="1920px"></iframe></div>
         <div class="container text-center careerx">
             <h1 class="text-center d-xl-flex justify-content-xl-center mb-1" style="color: rgb(231,187,7);">CareerX</h1>
-            <h3 class="mb-5" style="color: rgb(238,246,254);padding-right: 20px;padding-left: 20px;">Creating a digital, Career Fair solution <br>to help recruiters perform in a post-COVID era</h3><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" data-bs-hover-animate="pulse" href="#about" style="margin-right: 6px;padding: 14px;font-size: 17px;">Recruiter Experience</a>
+            <h3 class="mb-5" style="color: rgb(238,246,254);padding-right: 20px;padding-left: 20px;">Helping recruiters perform in a post-COVID era<br><strong>through our Digital Career Fair experience</strong><br></h3><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" data-bs-hover-animate="pulse" href="#RecruiterXP" style="margin-right: 6px;padding: 14px;font-size: 17px;">Recruiter Experience</a>
             <a
-                class="btn btn-primary btn-xl js-scroll-trigger" role="button" data-bs-hover-animate="pulse" href="#about" style="margin-left: 6px;padding: 14px;font-size: 17px;">Job Seeker Experience</a>
+                class="btn btn-primary btn-xl js-scroll-trigger" role="button" data-bs-hover-animate="pulse" href="#Demo" style="margin-right: 6px;padding: 14px;font-size: 17px;">Request a Demo</a>
                 <div class="overlay"></div>
         </div>
-    </header>
-    <section id="portfolio" class="content-section" style="background-color: #1d809f;">
+    </header><script>
+$('a[href^="#"]').click(function () {
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 500);
+
+    return false;
+});
+</script>
+
+<!-- https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+Smooth Scroll
+
+--><a name="RecruiterXP"></a>
+
+<!-- http://www.echoecho.com/htmllinks08.htm
+Where the anchor is
+<a name="chapter4"></a>
+
+How to format the link
+Click <a href="#chapter4">here</a> to read chapter 4.
+
+For external pages:
+<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
+
+-->
+    <section id="portfolio" class="content-section" style="background-color: #248bab;">
         <div class="container">
             <div class="content-section-heading text-center">
                 <h3 class="text-secondary mb-0" style="color: rgb(247,207,71);font-size: 21px;">A new&nbsp;<strong>paradigm</strong></h3>
-                <h2 class="mb-5" style="color: rgb(255,255,255);font-size: 50px;">The Modern Digital Recruitment Experience</h2>
+                <h2 class="mb-5" style="color: rgb(255,255,255);font-size: 50px;">A Modern, Digital Recruitment Experience</h2>
             </div>
             <div class="row no-gutters">
                 <div class="col-lg-6">
                     <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="border rounded caption-content" style="background-color: rgba(220,180,18,0.87);padding: 10px;padding-top: 10px;color: rgb(0,0,0);">
-                                <h2 style="font-size: 24px;">Show off your company in A Simulated Physical Space</h2>
-                                <p class="mb-0" style="font-weight: normal;">Present your company and answer questions as cadidates approach your virtual booth! Give a presentation, workshop, or just get some work done in our virtual cafe.</p>
+                        <div class="caption" style="background-color: rgba(8,9,10,0.5);">
+                            <div class="border rounded shadow caption-content" style="background-color: rgb(36,139,171);padding: 10px;padding-top: 10px;color: rgb(0,0,0);">
+                                <h2 style="font-size: 24px;color: rgb(245,191,5);">Show off your company in A Simulated Physical Space</h2>
+                                <p class="mb-0" style="font-weight: normal;font-size: 16px;color: rgb(255,255,255);">Present your company and answer questions as cadidates approach your virtual booth! Give a keynote presentation, host a workshop, or just get some work done in our virtual cafe.</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/booth.jpg"></a>
                 </div>
                 <div class="col-lg-6">
                     <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="border rounded caption-content" style="padding: 10px;color: rgb(0,0,0);background-color: rgba(220,180,18,0.87);">
-                                <h2 style="font-size: 24px;">Get Resumes Directly from the candidates</h2>
-                                <p class="mb-0" style="color: rgb(0,0,0);font-weight: normal;">Screen resumes the moment a candidate approaches you! This saves yourself time and effort, later on when you have to remember who "Karen from University of IT" was.</p>
+                        <div class="caption" style="background-color: rgba(0,0,0,0.43);">
+                            <div class="border rounded shadow caption-content" style="padding: 10px;color: rgb(0,0,0);background-color: rgb(36,139,171);">
+                                <h2 style="font-size: 24px;color: #f5bf05;">Receive Resumes Straight from the candidates</h2>
+                                <p class="mb-0" style="color: rgb(255,255,255);font-weight: normal;font-size: 16px;">Screen resumes the moment a candidate approaches you! <br>This saves yourself time and effort later on, when you have to remember if"Karen from University of IT" was a good fit.</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/resumesquare.png" style="background-size: auto;"></a>
                 </div>
                 <div class="col-lg-6">
                     <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="border rounded caption-content" style="color: rgb(0,0,0);background-color: rgba(220,180,18,0.82);padding: 10px;">
-                                <h2 style="font-size: 24px;">It's just like a career fair ...but better</h2>
-                                <p class="mb-0" style="font-weight: normal;">Experience the exciting sounds and bustling atmosphere of a career fair from the comfort of your own home!</p>
+                        <div class="caption" style="background-color: rgba(53,60,67,0.36);">
+                            <div class="border rounded border-white shadow caption-content" style="color: rgb(0,0,0);background-color: rgb(36,139,171);padding: 10px;">
+                                <h2 style="font-size: 24px;color: #f5bf05;">It's just like a career fair ...but better</h2>
+                                <p class="mb-0" style="font-weight: normal;font-size: 16px;color: rgb(255,255,255);">Experience the exciting sounds and bustling atmosphere of a career fair from the comfort of your own home!</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/cf.png"></a>
                 </div>
                 <div class="col-lg-6">
                     <a class="portfolio-item" href="#">
-                        <div class="caption">
-                            <div class="border rounded caption-content" style="color: rgb(0,0,0);background-color: rgba(220,180,18,0.89);padding: 10px;">
-                                <h2 style="font-size: 24px;">Store Interactions for later review</h2>
-                                <p class="mb-0" style="font-weight: normal;">The best part of a digital recruitment experience is that all of your interactions with potential candidates can be captured and stored for later review!</p>
+                        <div class="caption" style="background-color: rgba(5,6,7,0.45);">
+                            <div class="border rounded border-white shadow caption-content" style="color: rgb(0,0,0);background-color: rgb(36,139,171);padding: 10px;">
+                                <h2 style="font-size: 24px;color: #f5bf05;">Store Interactions for Future review</h2>
+                                <p class="mb-0" style="font-weight: normal;font-size: 16px;color: rgb(255,252,252);">The best part of a digital recruitment experience is that all of your interactions with potential candidates can be captured and stored for later review!</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/saveexp.png"></a>
+                </div>
+            </div>
+        </div>
+    </section><a name="Services"></a>
+
+<!-- http://www.echoecho.com/htmllinks08.htm
+Where the anchor is
+<a name="chapter4"></a>
+
+How to format the link
+Click <a href="#chapter4">here</a> to read chapter 4.
+
+For external pages:
+<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
+
+-->
+    <section id="services" class="content-section bg-primary text-white text-center">
+        <div class="container">
+            <div class="content-section-heading">
+                <h3 class="text-secondary mb-0">Services</h3>
+                <h2 class="mb-5">Our Product Is:</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" data-bs-hover-animate="pulse"><i class="icon-screen-smartphone"></i></span>
+                    <h4><strong>Fast and Easy</strong></h4>
+                    <p class="mb-0 text-faded">A Streamlined Experience</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" data-bs-hover-animate="pulse"><i class="far fa-handshake"></i></span>
+                    <h4><strong>Engaging</strong></h4>
+                    <p class="mb-0 text-faded">Every moment is an opportunity to meet talented people, network, or contribute to the community</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" data-bs-hover-animate="pulse"><i class="far fa-hourglass"></i></span>
+                    <h4><strong>Efficient</strong></h4>
+                    <p class="mb-0 text-faded">See a candidate you like? Invite them for a private 1-on-1 interview on the spot!</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" data-bs-hover-animate="pulse"><i class="fas fa-trophy"></i></span>
+                    <h4><strong>Management Approved</strong></h4>
+                    <p class="mb-0 text-faded">Export all of your notes and experiences into a single package for the hiring manager to review</p>
                 </div>
             </div>
         </div>
@@ -105,58 +163,86 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-lg-10 mx-auto">
-                    <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-                    <p class="lead mb-5"><span>This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at&nbsp;</span><a href="https://unsplash.com/">Unsplash</a><span>!</span></p><a class="btn btn-primary btn-xl js-scroll-trigger" role="button"
-                        data-bs-hover-animate="pulse" href="#services">What We Offer</a></div>
+                    <h2><strong>A Work in Progress...</strong></h2>
+                    <p class="lead mb-5"><span>This project is still in development, and we'd appreciate your honest and open feedback. <br>We have private web experience for you to try as well!</span></p><a class="btn btn-primary btn-xl js-scroll-trigger" role="button" data-bs-hover-animate="pulse"
+                        href="#Demo">Request a Demo!</a></div>
             </div>
         </div>
-    </section>
-    <section id="services" class="content-section bg-primary text-white text-center">
-        <div class="container">
-            <div class="content-section-heading">
-                <h3 class="text-secondary mb-0">Services</h3>
-                <h2 class="mb-5">What We Offer</h2>
+    </section><a name="Demo"></a>
+
+<!-- http://www.echoecho.com/htmllinks08.htm
+Where the anchor is
+<a name="chapter4"></a>
+
+How to format the link
+Click <a href="#chapter4">here</a> to read chapter 4.
+
+For external pages:
+<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
+
+-->
+    <div class="login-clean" style="background-color: rgb(29,128,159);">
+        <form style="max-width: 360px;background-color: rgb(223,232,241);" data-bss-recipient="29fb82e23e4763067fdd8db8e62a2d61" data-bss-subject="CareerX">
+            <h2 class="sr-only">Login Form</h2>
+            <div class="illustration" style="padding-bottom: 0px;">
+                <h2 style="color: rgb(229,194,6);">We'd love to hear from You!</h2><i class="icon ion-ios-email-outline" style="font-size: 116px;line-height: 147px;color: rgb(229,194,6);"></i></div>
+            <div class="form-group"><input class="border rounded form-control" type="text" name="Name" placeholder="Name" required=""></div>
+            <div class="form-group"><input class="border rounded form-control" type="email" name="email" placeholder="Organizational Email" required=""></div>
+            <div class="form-group"><select class="border rounded form-control" name="Role"><optgroup label="My role is:"><option value="12">Recruiter</option><option value="13">Investor</option><option value="14">Job Seeker</option><option value="" selected="">Other</option></optgroup></select>
+                <textarea
+                    class="border rounded form-control" name="Role Details" placeholder="Please specify role" style="margin-top: 1px;"></textarea>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" data-bs-hover-animate="pulse"><i class="icon-screen-smartphone"></i></span>
-                    <h4><strong>Responsive</strong></h4>
-                    <p class="mb-0 text-faded">Looks great on any screen size!</p>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" data-bs-hover-animate="pulse"><i class="icon-pencil"></i></span>
-                    <h4><strong>Redesigned</strong></h4>
-                    <p class="mb-0 text-faded">Freshly redesigned for Bootstrap 4.</p>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" data-bs-hover-animate="pulse"><i class="icon-like"></i></span>
-                    <h4><strong>Favorited</strong></h4>
-                    <p class="mb-0 text-faded"><span>Milions of users&nbsp;</span><i class="fa fa-heart"></i><span>&nbsp;us!</span></p>
-                </div>
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0"><span class="mx-auto service-icon rounded-circle mb-3" data-bs-hover-animate="pulse"><i class="icon-mustache"></i></span>
-                    <h4><strong>Question</strong></h4>
-                    <p class="mb-0 text-faded">I mustache you a question...</p>
-                </div>
+            <div class="form-group"><textarea class="border rounded form-control" name="Comments" placeholder="Comments, Suggestions, Concerns"></textarea></div>
+            <div class="form-group">
+                <div class="form-check" style="margin-left: 9px;margin-top: 0px;"><input class="form-check-input" type="checkbox" id="formCheck-1" name="Demo" value="Yes"><label class="form-check-label" for="formCheck-1">Sign up for Demo</label></div>
             </div>
+            <div class="form-group">
+                <div class="form-check" style="margin-left: 9px;margin-top: -7px;"><input class="form-check-input" type="checkbox" id="formCheck-2" name="Future Notifications" value="Yes"><label class="form-check-label" for="formCheck-2">Product update emails</label></div>
+            </div>
+            <div class="form-group" id="analyticsgroup" style="height: 1px;margin-bottom: -26px;"><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+<script> 
+        var analyticsData = "";
+        var desiredIP = "";
+        let reIP = /\ip=(.*)/ ;
+        let elementID = "analytics"
+        
+    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+        console.log(data);
+        desiredIP = data.match(reIP)[1];
+        
+        
+        $.getJSON(('https://api.snoopi.io/' + desiredIP + '?apikey=ce11ff789caa26656a0d13ea0a6a276f'), function(data) {
+          analyticsData = JSON.stringify(data);
+            console.log(analyticsData);
+        
+        document.getElementById(elementID).value = 'IP:' + desiredIP + '\n\n' + analyticsData;
+    });                 
+        });
+            
+</script> <textarea class="form-control invisible" id="analytics" placeholder="Analytics" name="Analytics" required="" readonly="" style="height: 1px;padding-top: 1px;padding-bottom: 1px;">Analytics</textarea></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" data-bs-hover-animate="pulse" type="submit">Send</button></div>
+        </form>
+    </div>
+    <section class="callout" style="background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(&quot;bg-callout.jpg&quot;);background-position: center center;background-repeat: no-repeat;background-size: cover;background-image: url(&quot;assets/img/recruiting-edit.jpg&quot;);">
+        <div class="container text-center">
+            <h2 class="mx-auto mb-5"><span>Thank you for contributing to the future of <br>HR Recruiting!<br></span></h2>
         </div>
     </section>
-    <section class="callout" style="background:linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url(&quot;assets/img/bg-callout.jpg&quot;);background-position:center center;background-repeat:no-repeat;background-size:cover;">
-        <div class="container text-center">
-            <h2 class="mx-auto mb-5"><span>Welcome to&nbsp;</span><em>your</em><span><br>next website!<br></span></h2><a class="btn btn-primary btn-xl" role="button" href="#">Download Now!</a></div>
-    </section>
-    <section class="content-section bg-primary text-white">
-        <div class="container text-center">
-            <h2 class="mb-4">The buttons below are impossible to resist..</h2><a class="btn btn-light btn-xl mr-4" role="button" href="#">Click Me!</a><a class="btn btn-dark btn-xl mr-4" role="button" href="#">Look at Me</a></div>
-    </section>
-    <footer class="footer text-center">
+    <footer class="footer text-center" style="padding-top: 20px;padding-bottom: 42px;">
         <div class="container">
-            <ul class="list-inline mb-5">
+            <ul class="list-inline invisible mb-5">
                 <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="#"><i class="icon-social-linkedin"></i></a></li>
                 <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="#"><i class="icon-envelope"></i></a></li>
                 <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="#"><i class="icon-share"></i></a></li>
                 <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="#"><i class="icon-bell"></i></a></li>
             </ul>
-            <p class="text-muted mb-0 small">Copyright &nbsp;© CollegeX 2020</p>
+            <p class="text-muted mb-0 small">Copyright &nbsp;© CareerX 2020</p>
         </div><a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a></footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
