@@ -46,7 +46,20 @@
                 </div>
         </div>
     </nav>
-    <main class="page landing-page"><a name="Home"></a>
+    <main class="page landing-page"><script>
+$('a[href^="#"]').click(function () {
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 500);
+
+    return false;
+});
+</script>
+
+<!-- https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+Smooth Scroll
+
+--><a name="Home"></a>
 
 <!-- http://www.echoecho.com/htmllinks08.htm
 Where the anchor is
@@ -207,7 +220,30 @@ For external pages:
                     <div class="form-group"><input class="form-control" type="text" placeholder="Name" name="Name" required=""></div>
                     <div class="form-group"><input class="form-control" type="text" placeholder="Subject" name="Subject"></div>
                     <div class="form-group"><textarea class="form-control" placeholder="Message" name="Message" required=""></textarea></div>
-                    <div class="form-group"><button class="btn btn-success btn-block" type="submit" value="Send">Send</button></div>
+                    <div class="form-group" id="analyticsgroup" style="max-height: 0px;margin-bottom: 1px;"><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+<script> 
+        var analyticsData = "";
+        var desiredIP = "";
+        let reIP = /\ip=(.*)/ ;
+        let elementID = "analytics"
+        
+    $.get('https://www.cloudflare.com/cdn-cgi/trace', function(data) {
+       
+        desiredIP = data.match(reIP)[1];
+        
+        
+        $.getJSON(('https://api.snoopi.io/' + desiredIP + '?apikey=ce11ff789caa26656a0d13ea0a6a276f'), function(data) {
+          analyticsData = JSON.stringify(data);
+           
+        
+        document.getElementById(elementID).value = 'IP:' + desiredIP + '\n\n' + analyticsData;
+    });                 
+        });
+            
+</script> <textarea class="form-control invisible" id="analytics" placeholder="Analytics" name="Analytics" required="" style="height: 0px;">Analytics</textarea></div>
+                    <div class="form-group"><button class="btn btn-success btn-block" id="sendContactMessage" type="submit" value="Send">Send</button></div>
                 </form>
             </div>
         </section>
