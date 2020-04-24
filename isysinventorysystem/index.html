@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>isys inventory</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean">
+        <div class="container"><a class="navbar-brand" href="#"><i class="fa fa-th-list" style="color: rgb(220,194,55);"></i>&nbsp;GSW Inventory System</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#Manager">Manager</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#Employee">Employee</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="contact-clean" style="margin-top: 62px;">
+        <form method="post">
+            <h2 class="text-center">Login</h2>
+            <div class="form-group"><input class="form-control" type="text" name="employee name" placeholder="Employee ID"></div><input class="form-control" type="password" placeholder="Employee Password">
+            <div class="form-group text-center"><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#Manager" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Login</a></div>
+        </form>
+    </div><a name="Manager"></a>
+
+<!-- http://www.echoecho.com/htmllinks08.htm
+Where the anchor is
+<a name="chapter4"></a>
+
+How to format the link
+Click <a href="#chapter4">here</a> to read chapter 4.
+
+For external pages:
+<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
+
+-->
+    <div class="contact-clean" style="margin-top: 62px;">
+        <h1 class="text-center">Manager Experience</h1>
+        <form method="post">
+            <p style="margin-bottom: 1px;"><strong>Logged in: Manager</strong></p><select class="form-control"><option value="12" selected="">Menu</option><option value="13" selected="">Report</option><option value="14">This is item 3</option></select>
+            <h2 class="text-center" style="margin-top: 15px;">Inventory Analytics</h2>
+            <div><canvas data-bs-chart="{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Revenue&quot;,&quot;backgroundColor&quot;:&quot;#4e73df&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;200&quot;,&quot;150&quot;,&quot;260&quot;,&quot;160&quot;,&quot;200&quot;,&quot;260&quot;,&quot;250&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:true,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
+            <div
+                class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Items</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" checked=""></td>
+                            <td>Bread</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Milk</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>Eggs</td>
+                            <td>45</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </div>
+    <div class="form-group text-center"><button class="btn btn-primary border rounded js-scroll-trigger" type="button" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Login</button></div>
+    </form>
+    </div>
+    <div class="contact-clean" style="margin-top: 62px;">
+        <form method="post">
+            <p style="margin-bottom: 1px;"><strong>Logged in: Manager</strong></p><select class="form-control"><option value="12" selected="">Menu</option><option value="13">Report</option><option value="14" selected="">Order Screen</option></select>
+            <h2 class="text-center" style="margin-top: 15px;">Order Screen</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>On Hand</th>
+                            <th>Order Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Orange</td>
+                            <td>10</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Apple</td>
+                            <td>15</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Milk</td>
+                            <td>15</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Bread</td>
+                            <td>5</td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Limes</td>
+                            <td>5</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Lemon</td>
+                            <td>20</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Beef</td>
+                            <td>10</td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Pork</td>
+                            <td>30</td>
+                            <td>60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="form-group text-center"><button class="btn btn-primary border rounded js-scroll-trigger" type="button" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Order Now</button></div>
+        </form>
+    </div>
+    <div class="contact-clean" style="margin-top: 62px;">
+        <form method="post">
+            <p style="margin-bottom: 1px;"><strong>Logged in: Manager</strong></p><select class="form-control"><option value="12" selected="">Menu</option><option value="13">Report</option><option value="14" selected="">Order Screen</option></select>
+            <h2 class="text-center" style="margin-top: 15px;">Order Confirmation</h2>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>On Hand</th>
+                            <th>Order Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Orange</td>
+                            <td><img src="assets/img/1.jpg" style="width: 120px;"></td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Apple</td>
+                            <td><img src="assets/img/2.jpg" style="width: 120px;"></td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Milk</td>
+                            <td><img src="assets/img/3.jpg" style="width: 120px;"></td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Bread</td>
+                            <td><img src="assets/img/4.jpg" style="width: 120px;"></td>
+                            <td>90</td>
+                        </tr>
+                        <tr>
+                            <td>Limes</td>
+                            <td><img src="assets/img/5.jpg" style="width: 120px;"></td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Lemon</td>
+                            <td><img src="assets/img/6.jpg" style="width: 120px;"></td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Beef</td>
+                            <td><img src="assets/img/7.jpg" style="width: 119px;"></td>
+                            <td>40</td>
+                        </tr>
+                        <tr>
+                            <td>Pork</td>
+                            <td><img src="assets/img/8.jpg" style="width: 120px;"></td>
+                            <td>60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="text-center" style="margin-bottom: 10px;">Payment</h2>
+            <h2 class="text-center" style="font-size: 29px;color: rgb(10,215,43);margin-bottom: 14px;">$1,500.00</h2>
+            <p style="font-size: 16px;margin-bottom: 1px;"><strong>Pay to:</strong></p>
+            <div class="form-row">
+                <div class="col">
+                    <p style="margin-bottom: 0px;">Vendor:</p>
+                    <p style="margin-bottom: 0px;font-size: 16px;"><strong>Food Wholesale INC.</strong></p>
+                </div>
+                <div class="col">
+                    <p style="margin-bottom: 0px;">Invoice #:</p>
+                    <p style="margin-bottom: 0px;font-size: 16px;"><strong>000215</strong></p>
+                </div>
+                <div class="col">
+                    <p style="margin-bottom: 0px;">Note to Vendor:</p>
+                    <p style="margin-bottom: 0px;font-size: 16px;"><strong>Payment for groceries</strong></p>
+                </div>
+            </div>
+            <p style="font-size: 20px;margin-bottom: 1px;margin-top: 11px;"><strong>Pay from my:</strong></p>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <p style="margin-bottom: 0px;font-size: 14px;">Bank Account:&nbsp;<button class="btn btn-light text-secondary border rounded border-dark" type="button" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;padding-bottom: 8px;padding-top: 8px;">Edit</button></p><span style="font-size: 18px;">&nbsp;<i class="fa fa-bank"></i>&nbsp;Account: ...5555&nbsp;&nbsp;<br></span></li>
+                <li
+                    class="list-group-item">
+                    <p style="margin-bottom: 0px;font-size: 14px;">Payment will be deducted:&nbsp;&nbsp;<button class="btn btn-light text-secondary border rounded border-dark" type="button" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;padding-bottom: 8px;padding-top: 8px;">Edit</button></p>
+                    <span
+                        style="font-size: 18px;">&nbsp;<i class="fa fa-calendar"></i>&nbsp;May 5, 2019&nbsp;&nbsp;<br></span>
+                        </li>
+            </ul><button class="btn btn-success text-white-50 border rounded js-scroll-trigger" type="button" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;font-size: 13px;">Confirm And pay</button></form>
+    </div>
+    <h1 class="text-center">Employee Experience</h1><a name="Employee"></a>
+
+<!-- http://www.echoecho.com/htmllinks08.htm
+Where the anchor is
+<a name="chapter4"></a>
+
+How to format the link
+Click <a href="#chapter4">here</a> to read chapter 4.
+
+For external pages:
+<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
+
+-->
+    <div class="contact-clean" style="margin-top: 62px;">
+        <form method="post" style="max-width: 938px;">
+            <h1 class="text-center">Employee POS</h1>
+            <p style="margin-bottom: 1px;"><strong>Logged in: Employee Name</strong></p><select class="form-control"><option value="12" selected="">Menu</option><option value="13" selected="">POS</option><option value="14">This is item 3</option></select>
+            <h2 class="text-center" style="margin-top: 15px;">Product Categories</h2>
+            <div class="form-row" style="height: 133px;">
+                <div class="col d-xl-flex justify-content-xl-center" style="background-image: url(&quot;assets/img/1.jpg&quot;);background-position: center;background-repeat: no-repeat;background-size: contain;"><button class="btn text-white" type="button" style="width: 100%;height: 100%;margin-top: 1px;background-color: rgba(120,120,120,0.46);font-size: 26px;"><strong>Fruits</strong></button></div>
+                <div class="col d-xl-flex justify-content-xl-center"
+                    style="background-image: url(&quot;assets/img/3.jpg&quot;);background-position: center;background-repeat: no-repeat;background-size: contain;"><button class="btn text-white" type="button" style="width: 100%;height: 100%;margin-top: 1px;background-color: rgba(144,144,144,0.46);font-size: 26px;"><strong>Drinks</strong></button></div>
+                <div class="col d-xl-flex justify-content-xl-center"
+                    style="background-image: url(&quot;assets/img/4.jpg&quot;);background-position: center;background-repeat: no-repeat;background-size: contain;"><button class="btn text-white" type="button" style="width: 100%;height: 100%;margin-top: 1px;background-color: rgba(123,123,123,0.46);font-size: 26px;"><strong>Breads</strong></button></div>
+                <div class="col d-xl-flex justify-content-xl-center"
+                    style="background-image: url(&quot;assets/img/7.jpg&quot;);background-position: center;background-repeat: no-repeat;background-size: contain;"><button class="btn text-white" type="button" style="width: 100%;height: 100%;margin-top: 1px;background-color: rgba(120,120,120,0.59);font-size: 26px;"><strong>Meats</strong></button></div>
+            </div>
+            <div class="form-group text-center">
+                <ul class="list-group" style="margin-top: 27px;">
+                    <li class="list-group-item text-left"><span style="font-size: 26px;"><strong>Products:</strong></span></li>
+                    <li class="list-group-item text-left"><span>Milk</span><span>&nbsp;-&nbsp;</span><span>&nbsp;$5.00</span></li>
+                    <li class="list-group-item text-left"><span>Eggs</span><span>&nbsp;-&nbsp;</span><span>&nbsp;$3.00</span></li>
+                    <li class="list-group-item text-left"><span>Bread</span><span>&nbsp;-&nbsp;</span><span>&nbsp;$3.00</span></li>
+                </ul>
+                <div class="form-check text-left" style="padding-top: 7px;padding-left: 34px;"><input class="form-check-input" type="checkbox" id="formCheck-2" style="height: 24px;width: 17px;" checked=""><label class="form-check-label" for="formCheck-2" style="font-size: 19px;">Rewards Member</label></div>
+                <h2 class="text-center"
+                    style="font-size: 25px;color: rgb(54,54,54);margin-bottom: 0px;">Total:</h2>
+                <h2 class="text-center" style="font-size: 29px;color: rgb(10,215,43);margin-bottom: 14px;">$11.00</h2><button class="btn btn-primary border rounded js-scroll-trigger" type="button" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;font-size: 22px;">Complete Transaction</button></div>
+        </form>
+    </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$('a[href^="#"]').click(function () {
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 500);
+
+    return false;
+});
+</script>
+
+<!-- https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+Smooth Scroll
+
+-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
