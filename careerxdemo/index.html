@@ -25,30 +25,28 @@
 </head>
 
 <body style="background-color: rgb(77,77,77);background-image: url(&quot;assets/img/wooden.jpg&quot;);">
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="background: rgb(223,237,250);box-shadow: 0px 5px 11px 0px rgb(189,189,195);">
         <div class="container"><a class="navbar-brand" href="#">RecruitX Experience</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="index.html">Pre-Event</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation">Register</a><a class="dropdown-item" role="presentation" href="#">Browse Events</a><a class="dropdown-item" role="presentation" href="#">Event Map</a><a class="dropdown-item" role="presentation"
-                                href="#">Booth Placement</a><a class="dropdown-item" role="presentation" href="#">Sponsorship</a><a class="dropdown-item" role="presentation" href="#">Payment/ Agreement</a><a class="dropdown-item" role="presentation" href="#">Booth Setup</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="index.html">Register</a><a class="dropdown-item" href="index.html#selectevents">Browse Events</a><a class="dropdown-item" href="index.html#directory">Directory</a><a class="dropdown-item" href="index.html#boothsetup">Booth Setup</a>
                             <a
-                                class="dropdown-item" role="presentation" href="#">Extra Features</a>
-                        </div>
+                                class="dropdown-item" href="index.html#terms">Terms and Conditions</a><a class="dropdown-item" href="index.html#creditcard">Payment</a></div>
                     </li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="During.html">During Event</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Group Presentation</a><a class="dropdown-item" role="presentation" href="#">1 on 1 Experience</a><a class="dropdown-item" role="presentation" href="#">Approach Passerbys</a></div>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="During.html">Group Presentation</a><a class="dropdown-item" href="During.html#oneonone">1 on 1 Experience</a><a class="dropdown-item" href="During.html#approach">Approach Passerbys</a></div>
                     </li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="Post.html">Post-Event</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Team Review</a><a class="dropdown-item" role="presentation" href="#">Individual Review</a><a class="dropdown-item" role="presentation" href="#">Export Data</a></div>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="Post.html">Team Review</a><a class="dropdown-item" href="Post.html#individualreview">Individual Review</a><a class="dropdown-item" href="Post.html#finalize">Export Data</a></div>
                     </li>
                 </ul>
             </div>
         </div>
-    </nav><a name="selectevents"></a>
+    </nav><a name="entry"></a>
 
 <!-- http://www.echoecho.com/htmllinks08.htm
 Where the anchor is
@@ -60,7 +58,20 @@ Click <a href="#chapter4">here</a> to read chapter 4.
 For external pages:
 <a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
 
---><a name="eventmap"></a>
+-->
+    <div class="contact-clean" style="margin-top: 62px;" name="Register">
+        <form method="post">
+            <h2 class="text-center">Register</h2>
+            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+            <div class="form-group"><input class="form-control" type="text" name="Email" placeholder="Company Email"></div>
+            <div class="form-group text-center"><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#selectevents" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Register</a></div>
+            <div class="form-group">
+                <div class="form-row justify-content-center align-items-center">
+                    <div class="col-3 text-center d-md-flex d-xl-flex align-self-center justify-content-md-center justify-content-xl-center"><a class="btn text-center d-md-flex justify-content-lg-center" role="button" style="padding: 3px;" data-toggle="modal" data-target="#linkedinregister"><i class="fa fa-linkedin-square d-lg-flex" style="font-size: 42px;color: rgb(30,106,221);width: 100%;text-align: center;"></i> </a></div>
+                </div>
+            </div>
+        </form>
+    </div><a name="selectevents"></a>
 
 <!-- http://www.echoecho.com/htmllinks08.htm
 Where the anchor is
@@ -72,43 +83,17 @@ Click <a href="#chapter4">here</a> to read chapter 4.
 For external pages:
 <a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
 
---><a name="terms"></a>
-
-<!-- http://www.echoecho.com/htmllinks08.htm
-Where the anchor is
-<a name="chapter4"></a>
-
-How to format the link
-Click <a href="#chapter4">here</a> to read chapter 4.
-
-For external pages:
-<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
-
---><a name="boothsetup"></a>
-
-<!-- http://www.echoecho.com/htmllinks08.htm
-Where the anchor is
-<a name="chapter4"></a>
-
-How to format the link
-Click <a href="#chapter4">here</a> to read chapter 4.
-
-For external pages:
-<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
-
---><a name="extrafeatures"></a>
-
-<!-- http://www.echoecho.com/htmllinks08.htm
-Where the anchor is
-<a name="chapter4"></a>
-
-How to format the link
-Click <a href="#chapter4">here</a> to read chapter 4.
-
-For external pages:
-<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
-
---><a name="allprepared"></a>
+-->
+    <div class="contact-clean" style="margin-top: 62px;" name="">
+        <form method="post">
+            <h2 class="text-center">Browse/ Select Events</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><span>Beta Launch<br>10/25 Companies<br>73/200 Students<br><br></span><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#directory" style="margin-top: -2px;">Register</a></li>
+                <li class="list-group-item"><span>YCombinator Career Fair<br>25/25 Companies<br>150/200 Students<br><br></span><button class="btn btn-link border rounded" type="submit" style="margin-top: -2px;" disabled="">Register</button></li>
+                <li class="list-group-item"><span>Undetermined&nbsp;<br>0/50 Companies<br>0/500 Students<br><br></span><button class="btn btn-link border rounded" type="submit" style="margin-top: -2px;" disabled="">Register</button></li>
+            </ul>
+        </form>
+    </div><a name="directory"></a>
 
 <!-- http://www.echoecho.com/htmllinks08.htm
 Where the anchor is
@@ -123,36 +108,13 @@ For external pages:
 -->
     <div class="contact-clean" style="margin-top: 62px;">
         <form method="post">
-            <h2 class="text-center">Register</h2>
-            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
-            <div class="form-group"><input class="form-control" type="text" name="Email" placeholder="Company Email"></div>
-            <div class="form-group text-center"><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#IndividualReview" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Register</a></div>
-            <div class="form-group">
-                <div class="form-row justify-content-center align-items-center">
-                    <div class="col-3 d-xl-flex align-self-center justify-content-xl-center"><button class="btn" type="submit" style="padding: 3px;margin-left: 7px;" data-toggle="modal" data-target="#linkedinregister"><i class="fa fa-linkedin-square" style="font-size: 42px;color: rgb(30,106,221);"></i> </button></div>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="contact-clean" style="margin-top: 62px;">
-        <form method="post">
-            <h2 class="text-center">Browse/ Select Events</h2>
-            <ul class="list-group">
-                <li class="list-group-item"><span>Beta Launch<br>10/25 Companies<br>73/200 Students<br><br></span><button class="btn btn-primary border rounded" type="submit" style="margin-top: -2px;">Register</button></li>
-                <li class="list-group-item"><span>Leap Begin Career Fair<br>25/25 Companies<br>150/200 Students<br><br></span><button class="btn btn-link border rounded" type="submit" style="margin-top: -2px;" disabled="">Register</button></li>
-                <li class="list-group-item"><span>Undetermined&nbsp;<br>0/50 Companies<br>0/500 Students<br><br></span><button class="btn btn-link border rounded" type="submit" style="margin-top: -2px;" disabled="">Register</button></li>
-            </ul>
-        </form>
-    </div>
-    <div class="contact-clean" style="margin-top: 62px;">
-        <form method="post">
             <h2 class="text-center">Directory&nbsp;</h2>
             <h2 class="text-center">Sponsorship Tiers</h2>
             <div>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Tier 1</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Tier 2</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Tier 3</a></li>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Tier 1</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Tier 2</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Tier 3</a></li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" role="tabpanel" id="tab-1">
@@ -168,35 +130,49 @@ For external pages:
             </div>
             <h2 class="text-center">Directory Placement</h2>
             <ul class="list-group">
-                <li class="list-group-item"><span style="font-size: 30px;"><button class="btn btn-primary border rounded" type="submit" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;">Select</button>&nbsp;Tier 1 - A5&nbsp;<br></span></li>
-                <li class="list-group-item"><span style="font-size: 30px;"><button class="btn btn-primary border rounded" type="submit" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;">Select</button>&nbsp;Tier 2 - B13&nbsp;<br></span></li>
-                <li class="list-group-item"><span style="font-size: 30px;"><button class="btn btn-primary border rounded" type="submit" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;">Select</button>&nbsp;Tier 3 - C25&nbsp;<br></span></li>
+                <li class="list-group-item"><span style="font-size: 30px;"><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#boothsetup" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;">Select</a>&nbsp;Tier 1 - A5&nbsp;<br></span></li>
+                <li
+                    class="list-group-item"><span style="font-size: 30px;"><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#boothsetup" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;">Select</a>&nbsp;Tier 2 - B13&nbsp;<br></span></li>
+                    <li
+                        class="list-group-item"><span style="font-size: 30px;"><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#boothsetup" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;">Select</a>&nbsp;Tier 3 - C25&nbsp;<br></span></li>
             </ul>
         </form>
-    </div>
+    </div><a name="boothsetup"></a>
+
+<!-- http://www.echoecho.com/htmllinks08.htm
+Where the anchor is
+<a name="chapter4"></a>
+
+How to format the link
+Click <a href="#chapter4">here</a> to read chapter 4.
+
+For external pages:
+<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
+
+-->
     <div class="contact-clean" style="margin-top: 62px;">
         <form method="post">
-            <h2 class="text-center">Display Setup</h2>
+            <h2 class="text-center">Booth Display Setup</h2>
             <div>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">Logo</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Video</a></li>
-                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-3">Slides</a></li>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-7">Logo</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-8">Video</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-9">Slides</a></li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane" role="tabpanel" id="tab-1">
+                    <div class="tab-pane" role="tabpanel" id="tab-7">
                         <p>Upload Company Logo:<br><br><input type="file"><br></p>
                     </div>
-                    <div class="tab-pane" role="tabpanel" id="tab-2">
+                    <div class="tab-pane active" role="tabpanel" id="tab-8">
                         <p>Upload Video Here:<br><input type="file"><br><br>Or Provide a Link Here:<br><input class="form-control" type="url" placeholder="https://www.youtube.com/"><br><br></p>
                     </div>
-                    <div class="tab-pane active" role="tabpanel" id="tab-3">
+                    <div class="tab-pane" role="tabpanel" id="tab-9">
                         <p>Upload Presentation Slides Here:<br><input type="file"><br><br>Or Provide a Link Here:<br><input class="form-control" type="url" placeholder="https://docs.google.com/presentation/"><br><br></p>
                     </div>
                 </div>
             </div>
             <h2 class="text-center" style="margin-bottom: 13px;">Company Info</h2><input class="form-control" type="text" placeholder="Company Name" style="margin-bottom: 7px;"><textarea class="form-control" placeholder="Description Text"></textarea>
-            <h2 class="text-center">Desired Job Roles</h2><select class="form-control" multiple="" style="height: 107px;"><optgroup label="Options"><option value="12" selected="">Accounting Intern</option><option value="13">This is item 2</option><option value="14">This is item 3</option></optgroup></select>
+            <h2 class="text-center">Desired Job Roles</h2><select class="form-control" multiple="" style="height: 107px;"><optgroup label="Options"><option value="12" selected="">Accounting Intern</option><option value="13">Social Media Marketer</option><option value="14">Sales Associate</option></optgroup></select>
             <select
                 class="form-control" multiple="" style="height: 107px;">
                 <optgroup label="Selected">
@@ -207,27 +183,39 @@ For external pages:
                 <h2 class="text-center">Extra Features</h2>
                 <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Prescreen candidates</label></div>
                 <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Onsite Technical Interviews</label></div>
-                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Live A/B Testing for Booth </label></div>
-        </form>
-    </div>
+                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Live A/B Testing for Booth </label></div><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#terms"
+                    style="margin-top: 10px;padding-left: 9px;padding-right: 9px;">Select</a></form>
+    </div><a name="terms"></a>
+
+<!-- http://www.echoecho.com/htmllinks08.htm
+Where the anchor is
+<a name="chapter4"></a>
+
+How to format the link
+Click <a href="#chapter4">here</a> to read chapter 4.
+
+For external pages:
+<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
+
+-->
     <div class="contact-clean" style="margin-top: 62px;">
         <form method="post">
             <h2 class="text-center">Terms, Liability, Privacy</h2>
             <div>
-                <ul class="nav nav-tabs">
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1">Liability</a></li>
-                    <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Terms</a></li>
-                    <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-2">Privacy</a></li>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-4">Liability</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-5">Terms</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-6">Privacy</a></li>
                 </ul>
                 <div class="tab-content">
-                    <div class="tab-pane" role="tabpanel" id="tab-1">
+                    <div class="tab-pane active" role="tabpanel" id="tab-4">
                         <div style="background-image: url(&quot;assets/img/liability.png&quot;);height: 394px;background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
                     </div>
-                    <div class="tab-pane active" role="tabpanel" id="tab-2">
-                        <div style="background-image: url(&quot;assets/img/privacy.jpg&quot;);height: 394px;background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+                    <div class="tab-pane" role="tabpanel" id="tab-5" name="tab-2">
+                        <div style="height: 394px;background: url(&quot;assets/img/terms.jpg&quot;) center / contain no-repeat;"></div>
                     </div>
-                    <div class="tab-pane" role="tabpanel" id="tab-3">
-                        <div style="background-image: url(&quot;assets/img/liability.png&quot;);height: 394px;background-position: center;background-size: contain;background-repeat: no-repeat;"></div>
+                    <div class="tab-pane" role="tabpanel" id="tab-6">
+                        <div style="height: 394px;background: url(&quot;assets/img/privacy.jpg&quot;) center / contain no-repeat;"></div>
                     </div>
                 </div>
             </div>
@@ -252,32 +240,62 @@ For external pages:
             <p style="font-size: 20px;margin-bottom: 1px;margin-top: 11px;"><strong>Pay from my:</strong></p>
             <ul class="list-group">
                 <li class="list-group-item">
-                    <p style="margin-bottom: 0px;font-size: 14px;">Credit Card:&nbsp;&nbsp;<button class="btn btn-light text-secondary border rounded border-dark" type="submit" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;padding-bottom: 8px;padding-top: 8px;">Edit</button></p>
-                    <span
-                        style="font-size: 18px;">&nbsp;<i class="fa fa-cc-visa"></i>&nbsp;Visa Card ...5555&nbsp;&nbsp;<br></span>
-                </li>
-                <li class="list-group-item">
-                    <p style="margin-bottom: 0px;font-size: 14px;">Payment will be deducted:&nbsp;&nbsp;<button class="btn btn-light text-secondary border rounded border-dark" type="submit" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;padding-bottom: 8px;padding-top: 8px;">Edit</button></p>
-                    <span
-                        style="font-size: 18px;">&nbsp;<i class="fa fa-calendar"></i>&nbsp;April 22, 2019&nbsp;&nbsp;<br></span>
-                </li>
-            </ul><a class="btn btn-secondary text-success border rounded js-scroll-trigger" role="button" href="#IndividualReview" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Confirm And pay</a></form>
+                    <p style="margin-bottom: 0px;font-size: 14px;">Credit Card:&nbsp;&nbsp;<a class="btn btn-light text-secondary border rounded border-dark" role="button" data-target="#creditcard" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;padding-bottom: 8px;padding-top: 8px;"
+                            data-toggle="modal">Edit</a></p><span style="font-size: 18px;">&nbsp;<i class="fa fa-cc-visa"></i>&nbsp;Visa Card ...5555&nbsp;&nbsp;<br></span></li>
+            </ul><a class="btn btn-secondary text-success border rounded js-scroll-trigger" role="button" href="#allprepared" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Confirm And pay</a></form>
     </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="contact-agent">
+    <div class="modal fade" role="dialog" tabindex="-1" id="linkedinregister">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Registering through Linkedin...</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <h4 class="modal-title">Register Through Linkedin</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
                 <div class="modal-body border rounded-0">
-                    <p class="text-left" style="font-size: 18px;height: 141px;">Complete!<br><br><br><br></p>
-                    <div class="progress flash animated">
+                    <h4 style="padding-top: 44px;">Registration Complete!</h4>
+                    <div class="progress flash animated" style="margin-bottom: 49px;">
                         <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
                     </div>
                 </div>
-                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal">Back</button></div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal">Done</button></div>
             </div>
         </div>
     </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="creditcard">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Enter Credit Card</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                <div class="modal-body border rounded-0">
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-size: 20px;margin-bottom: 1px;margin-top: 11px;"><strong>Owner</strong></p><input type="text" value="Jon Doe"></div>
+                        <div class="col">
+                            <p style="font-size: 20px;margin-bottom: 1px;margin-top: 11px;"><strong>CVV</strong></p><input type="text" value="***"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-size: 20px;margin-bottom: 1px;margin-top: 11px;"><strong>Card Number</strong></p><input type="text" value="5555 5555 5555" style="width: 80%;"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p style="font-size: 20px;margin-bottom: 1px;margin-top: 11px;"><strong>Expiration Date</strong>&nbsp;</p><input type="number" min="1" max="12" value="1"><input type="number" min="1990" max="2030" value="2025" style="margin: 5px;"><img src="assets/img/1200px-Visa.svg.png" style="width: 78px;margin: 5px;"></div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-primary" type="button" data-dismiss="modal">Done</button></div>
+            </div>
+        </div>
+    </div><a name="allprepared"></a>
+
+<!-- http://www.echoecho.com/htmllinks08.htm
+Where the anchor is
+<a name="chapter4"></a>
+
+How to format the link
+Click <a href="#chapter4">here</a> to read chapter 4.
+
+For external pages:
+<a href="http://www.yahoo.com#YahoosAnchor">blabla</a>
+
+-->
     <div class="contact-clean" style="margin-top: 62px;">
         <form method="post">
             <h2 class="text-center">You're All Prepared!<br>Lets skip ahead to the day of the event!<br><br><a class="btn btn-primary" role="button" href="During.html">During-event Experience</a><br></h2>

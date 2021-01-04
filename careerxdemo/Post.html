@@ -25,25 +25,23 @@
 </head>
 
 <body style="background-color: rgb(77,77,77);background-image: url(&quot;assets/img/wooden.jpg&quot;);">
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navigation-clean-button" style="background: rgb(223,237,250);box-shadow: 0px 5px 11px 0px rgb(189,189,195);">
         <div class="container"><a class="navbar-brand" href="#">RecruitX Experience</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse"
                 id="navcol-1">
                 <ul class="nav navbar-nav mr-auto">
-                    <li class="nav-item" role="presentation"></li>
-                    <li class="nav-item" role="presentation"></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="index.html">Pre-Event</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation">Register</a><a class="dropdown-item" role="presentation" href="#">Browse Events</a><a class="dropdown-item" role="presentation" href="#">Event Map</a><a class="dropdown-item" role="presentation"
-                                href="#">Booth Placement</a><a class="dropdown-item" role="presentation" href="#">Sponsorship</a><a class="dropdown-item" role="presentation" href="#">Payment/ Agreement</a><a class="dropdown-item" role="presentation" href="#">Booth Setup</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="index.html">Register</a><a class="dropdown-item" href="index.html#selectevents">Browse Events</a><a class="dropdown-item" href="index.html#directory">Directory</a><a class="dropdown-item" href="index.html#boothsetup">Booth Setup</a>
                             <a
-                                class="dropdown-item" role="presentation" href="#">Extra Features</a>
-                        </div>
+                                class="dropdown-item" href="index.html#terms">Terms and Conditions</a><a class="dropdown-item" href="index.html#creditcard">Payment</a></div>
                     </li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="During.html">During Event</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Group Presentation</a><a class="dropdown-item" role="presentation" href="#">1 on 1 Experience</a><a class="dropdown-item" role="presentation" href="#">Approach Passerbys</a></div>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="During.html">Group Presentation</a><a class="dropdown-item" href="During.html#oneonone">1 on 1 Experience</a><a class="dropdown-item" href="During.html#approach">Approach Passerbys</a></div>
                     </li>
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="Post.html">Post-Event</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Team Review</a><a class="dropdown-item" role="presentation" href="#">Individual Review</a><a class="dropdown-item" role="presentation" href="#">Export Data</a></div>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="Post.html">Team Review</a><a class="dropdown-item" href="Post.html#individualreview">Individual Review</a><a class="dropdown-item" href="Post.html#finalize">Export Data</a></div>
                     </li>
                 </ul>
             </div>
@@ -74,7 +72,7 @@
             </div>
             <h2 class="text-center" style="margin-bottom: 6px;margin-top: 34px;">Highlighted Candidate</h2>
             <div class="carousel slide" data-ride="carousel" data-interval="false" data-pause="false" id="carousel-3">
-                <div class="carousel-inner" role="listbox">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="form-row">
                             <div class="col-6" style="background-position: center;background-size: cover;height: 134px;">
@@ -88,8 +86,8 @@
                             <div class="col-6" style="background-position: center;background-size: cover;height: 134px;">
                                 <p>Save for Hiring Manager:</p>
                                 <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch1"><label class="form-check-label custom-control-label" for="customSwitch1">Profile</label></div>
-                                <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch1"><label class="form-check-label custom-control-label" for="customSwitch1">Resume</label></div>
-                                <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch1"><label class="form-check-label custom-control-label" for="customSwitch1">Video Snippets</label></div>
+                                <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch2"><label class="form-check-label custom-control-label" for="customSwitch2">Resume</label></div>
+                                <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch3"><label class="form-check-label custom-control-label" for="customSwitch3">Video Snippets</label></div>
                             </div>
                             <div class="col-6" style="background-image: url(&quot;assets/img/resumesquare.png&quot;);background-position: center;background-size: contain;height: 134px;width: 162px;background-repeat: no-repeat;">
                                 <p class="text-right" style="background-color: rgba(255,255,255,0);"><i class="fa fa-expand border rounded border-primary shadow-sm" style="font-size: 19px;padding-top: 1px;padding-right: 1px;color: rgb(7,107,206);padding-bottom: 1px;padding-left: 1px;margin-top: 2px;"></i><br></p>
@@ -149,8 +147,8 @@
                     <li data-target="#carousel-3" data-slide-to="2"></li>
                 </ol>
             </div>
-            <h2 class="text-center" style="margin-bottom: 6px;margin-top: 34px;">Written Notes</h2><textarea class="form-control" placeholder="Very interested in Artificial Intelligence"></textarea><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#IndividualReview" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Finish Meeting</a></form>
-    </div><a name="IndividualReview"></a>
+            <h2 class="text-center" style="margin-bottom: 6px;margin-top: 34px;">Written Notes</h2><textarea class="form-control" placeholder="Very interested in Artificial Intelligence"></textarea><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#individualreview" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Finish Meeting</a></form>
+    </div><a name="individualreview"></a>
 
 <!-- http://www.echoecho.com/htmllinks08.htm
 Where the anchor is
@@ -168,7 +166,7 @@ For external pages:
             <h2 class="text-center">Individual Review</h2>
             <h2 class="text-center" style="margin-bottom: 6px;margin-top: 34px;">Candidate</h2>
             <div class="carousel slide" data-ride="carousel" data-interval="false" data-pause="false" id="carousel-2">
-                <div class="carousel-inner" role="listbox">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="form-row">
                             <div class="col-6" style="background-position: center;background-size: cover;height: 134px;">
@@ -181,9 +179,9 @@ For external pages:
                         <div class="form-row">
                             <div class="col-6" style="background-position: center;background-size: cover;height: 134px;">
                                 <p>Save for Hiring Manager:</p>
-                                <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch1"><label class="form-check-label custom-control-label" for="customSwitch1">Profile</label></div>
-                                <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch1"><label class="form-check-label custom-control-label" for="customSwitch1">Resume</label></div>
-                                <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch1"><label class="form-check-label custom-control-label" for="customSwitch1">Video Snippets</label></div>
+                                <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch4"><label class="form-check-label custom-control-label" for="customSwitch4">Profile</label></div>
+                                <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch5"><label class="form-check-label custom-control-label" for="customSwitch5">Resume</label></div>
+                                <div class="form-check custom-control custom-switch"><input class="form-check-input custom-control-input" type="checkbox" id="customSwitch6"><label class="form-check-label custom-control-label" for="customSwitch6">Video Snippets</label></div>
                             </div>
                             <div class="col-6" style="background-image: url(&quot;assets/img/resumesquare.png&quot;);background-position: center;background-size: contain;height: 134px;width: 162px;background-repeat: no-repeat;">
                                 <p class="text-right" style="background-color: rgba(255,255,255,0);"><i class="fa fa-expand border rounded border-primary shadow-sm" style="font-size: 19px;padding-top: 1px;padding-right: 1px;color: rgb(7,107,206);padding-bottom: 1px;padding-left: 1px;margin-top: 2px;"></i><br></p>
@@ -243,8 +241,8 @@ For external pages:
                     <li data-target="#carousel-2" data-slide-to="2"></li>
                 </ol>
             </div>
-            <h2 class="text-center" style="margin-bottom: 6px;margin-top: 34px;">Written Notes</h2><textarea class="form-control" placeholder="Great Fit for this position"></textarea><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#Finalize" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Finish Review</a></form>
-    </div><a name="Finalize"></a>
+            <h2 class="text-center" style="margin-bottom: 6px;margin-top: 34px;">Written Notes</h2><textarea class="form-control" placeholder="Great Fit for this position"></textarea><a class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#finalize" style="margin-top: 11px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Finish Review</a></form>
+    </div><a name="finalize"></a>
 
 <!-- http://www.echoecho.com/htmllinks08.htm
 Where the anchor is
@@ -262,7 +260,7 @@ For external pages:
             <h2 class="text-center">Finalize Recruitment Package</h2>
             <h2 class="text-center" style="margin-bottom: 6px;margin-top: 34px;">Candidates</h2>
             <div class="carousel slide" data-ride="carousel" data-interval="false" data-pause="false" id="carousel-1">
-                <div class="carousel-inner" role="listbox">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="form-row">
                             <div class="col-6" style="background-position: center;background-size: cover;height: 134px;">
@@ -334,11 +332,11 @@ For external pages:
             <p style="margin-bottom: -2px;font-size: 23px;">Final Options:</p>
             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Send as Email</label></div>
             <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" checked=""><label class="form-check-label" for="formCheck-1">Attach Resumes</label></div>
-            <div class="form-check" style="margin-bottom: 9px;"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Attach Video Snippets</label></div><button class="btn btn-primary border rounded" type="submit" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;">Export to PDF</button>
+            <div class="form-check" style="margin-bottom: 9px;"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Attach Video Snippets</label></div><a class="btn btn-primary border rounded" role="button" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;">Export to PDF</a>
             <a
-                class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#Complete" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Send to Hiring Manager</a>
+                class="btn btn-primary border rounded js-scroll-trigger" role="button" href="#complete" style="margin-top: -2px;padding-left: 9px;padding-right: 9px;margin-left: 11px;">Send to Hiring Manager</a>
         </form>
-    </div><a name="Complete"></a>
+    </div><a name="complete"></a>
 
 <!-- http://www.echoecho.com/htmllinks08.htm
 Where the anchor is
